@@ -82,7 +82,9 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000050">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood. Ambiguous between class-level and instance-level.
+
+domain: continuant
 range: continuant
 time: at some time
 level: instances
@@ -91,6 +93,7 @@ domain: occurrent
 range: occurrent
 time: atemporal
 level: instances</obo:IAO_0000116>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:part_of</dc:source>
         <obo:IAO_0000111 xml:lang="en">part of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
         <owl:inverseOf rdf:resource="&obo;BFO_0000051"/>
@@ -103,7 +106,9 @@ level: instances</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0000051">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood. Ambiguous between class-level and instance-level.
+
+domain: continuant
 range: continuant
 time: at some time
 level: instances
@@ -195,6 +200,7 @@ level: instances</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000057">
         <rdfs:label xml:lang="en">has participant</rdfs:label>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
         <obo:IAO_0000116 xml:lang="en">domain: process
 range: continuant and (not spatial region)
 time: at some time
@@ -241,6 +247,7 @@ level: instances</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0000060">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</dc:source>
         <obo:IAO_0000116 xml:lang="en">domain: process
 range: process
 time: atemporal
@@ -415,6 +422,7 @@ level: instances</obo:IAO_0000116>
 range: spatial region
 time: at some time
 level: instances</obo:IAO_0000116>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
         <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
         <owl:inverseOf rdf:resource="&obo;BFO_0001015"/>
@@ -427,16 +435,19 @@ level: instances</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001008">
         <rdfs:label xml:lang="en">adjacent to</rdfs:label>
         <obo:IAO_0000111 xml:lang="en">adjacent to</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">adjacent_to</obo:IAO_0000118>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant or spatial region
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:adjacent_to</dc:source>
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between class-level and instance-level.
+
+domain: independent continuant or spatial region
 range: independent continuant or spatial region
 time: atemporal
-level: universals
+level: classes
 
 domain: independent continuant or spatial region
 range: independent continuant or spatial region
 time: at some time
 level: instances</obo:IAO_0000116>
+        <obo:IAO_0000118 xml:lang="en">adjacent_to</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is adjacent to</obo:IAO_0000118>
     </owl:ObjectProperty>
     
@@ -449,6 +460,7 @@ level: instances</obo:IAO_0000116>
         <rdfs:label xml:lang="en">derives from</rdfs:label>
         <obo:IAO_0000111 xml:lang="en">derives from</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">derives_from</obo:IAO_0000118>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:derives_from</dc:source>
         <obo:IAO_0000116 xml:lang="en">domain: material entity
 range: material entity
 time: atemporal
@@ -477,6 +489,7 @@ level: instances</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0001011">
         <rdfs:label xml:lang="en">has active participant</rdfs:label>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_agent</dc:source>
         <obo:IAO_0000116 xml:lang="en">domain: process
 range: continuant and (not spatial region)
 time: at some time
@@ -513,7 +526,10 @@ level: instances</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001013">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">integral part of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:integral_part_of</dc:source>
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood. Ambiguous between class-level and instance-level.
+
+domain: continuant
 range: continuant
 time: at some time
 level: instances
@@ -535,7 +551,9 @@ level: instances</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001014">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has integral part</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood. Ambiguous between class-level and instance-level.
+
+domain: continuant
 range: continuant
 time: at some time
 level: instances
@@ -571,7 +589,9 @@ level: instances</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001016">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">proper part of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood. Ambiguous between class-level and instance-level.
+
+domain: continuant
 range: continuant
 time: at some time
 level: instances
@@ -580,6 +600,7 @@ domain: occurrent
 range: occurrent
 time: atemporal
 level: instances</obo:IAO_0000116>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:proper_part_of</dc:source>
         <obo:IAO_0000111 xml:lang="en">proper part of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">proper_part_of</obo:IAO_0000118>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000050"/>
@@ -593,7 +614,9 @@ level: instances</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001017">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has proper part</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood. Ambiguous between class-level and instance-level.
+
+domain: continuant
 range: continuant
 time: at some time
 level: instances
@@ -615,10 +638,11 @@ level: instances</obo:IAO_0000116>
         <rdfs:label xml:lang="en">surrounded by</rdfs:label>
         <obo:IAO_0000118 xml:lang="en">contained in</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">contained_in</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">domain: independent continuant or spatial region
+        <obo:IAO_0000116 xml:lang="en">domain: independent continuant or spatial region
 range: independent continuant or spatial region
 time: atemporal
-level: universals</obo:IAO_0000118>
+level: classes</obo:IAO_0000116>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:contained_in</dc:source>
         <obo:IAO_0000111 xml:lang="en">surrounded by</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">surrounded_by</obo:IAO_0000118>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0001008"/>
@@ -632,10 +656,10 @@ level: universals</obo:IAO_0000118>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001019">
         <rdfs:label xml:lang="en">surounds</rdfs:label>
         <obo:IAO_0000118 xml:lang="en">contains</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">domain: independent continuant or spatial region
+        <obo:IAO_0000116 xml:lang="en">domain: independent continuant or spatial region
 range: independent continuant or spatial region
 time: atemporal
-level: universals</obo:IAO_0000118>
+level: classes</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">surrounds</obo:IAO_0000111>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0001008"/>
     </owl:ObjectProperty>
@@ -647,6 +671,7 @@ level: universals</obo:IAO_0000118>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001020">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">transformation of</rdfs:label>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:transformation_of</dc:source>
         <obo:IAO_0000111 xml:lang="en">transformation of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">transformation_of</obo:IAO_0000118>
         <owl:inverseOf rdf:resource="&obo;BFO_0001021"/>
@@ -659,6 +684,8 @@ level: universals</obo:IAO_0000118>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001021">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">transformed into</rdfs:label>
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
+        <obo:IAO_0000116 xml:lang="en">Obsolete in OBO_REL.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">transformed into</obo:IAO_0000111>
     </owl:ObjectProperty>
     
@@ -669,7 +696,10 @@ level: universals</obo:IAO_0000118>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001022">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has improper part</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood. Ambiguous between class-level and instance-level.
+
+domain: continuant
 range: continuant
 time: at some time
 level: instances
@@ -678,6 +708,7 @@ domain: occurrent
 range: occurrent
 time: atemporal
 level: instances</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">OBSOLETE: See reasons for obsoletion of improper_part_of.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">has improper part</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">has_improper_part</obo:IAO_0000118>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000051"/>
@@ -691,7 +722,10 @@ level: instances</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001023">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">improper part of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
+        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood. Ambiguous between class-level and instance-level.
+
+domain: continuant
 range: continuant
 time: at some time
 level: instances
@@ -700,6 +734,7 @@ domain: occurrent
 range: occurrent
 time: atemporal
 level: instances</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">OBSOLETE. The definition is &quot;As for part_of, with the additional constraint that subject and object may be identical&quot;. However, part_of is already reflexive, therefore improper_part_of is identical to part_of. If read differently, as &quot;improper_part_of is part_of but not proper_part_of&quot;,improper_part_of becomes identity. So, improper_part_of is either identical to part_of or to identity, and not an intuitive synonym for either of them. [Robert Hoehndorf]</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">improper part of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">improper_part_of</obo:IAO_0000118>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000050"/>
@@ -711,6 +746,8 @@ level: instances</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0001024">
         <rdfs:label xml:lang="en">relationship</rdfs:label>
+        <obo:IAO_0000116 rdf:datatype="&xsd;boolean">false</obo:IAO_0000116>
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
         <obo:IAO_0000111 xml:lang="en">relationship</obo:IAO_0000111>
     </owl:ObjectProperty>
     
