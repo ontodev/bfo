@@ -1,14 +1,11 @@
 <?xml version="1.0"?>
 <rdf:RDF
     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-    xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-    xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl#"
-    xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -16,7 +13,6 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
     xmlns:obo="http://purl.obolibrary.org/obo/"
-    xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
   xml:base="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl">
   <owl:Ontology rdf:about="">
@@ -117,9 +113,6 @@
           <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
             <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
             <rdfs:label xml:lang="en">term imported</rdfs:label>
-            13:45-14:00 @walk home
-            14:00-15:00 @IEDB NCBI Converter: finish, test, commit, email
-
           </obo:IAO_0000225>
         </owl:oneOf>
       </owl:Class>
@@ -261,18 +254,11 @@
     <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
   </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000603">
-    <rdfs:label xml:lang="en">is allocated id range</rdfs:label>
-    <obo:IAO_0000111 xml:lang="en">is allocated id range</obo:IAO_0000111>
-    <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000115 xml:lang="en">Add as annotation triples in the granting ontology</obo:IAO_0000115>    <obo:IAO_0000115 xml:lang="en">Relates an ontology IRI to an (inclusive) range of IRIs in an OBO name space. The range is give as, e.g. "IAO_0020000-IAO_0020999"</obo:IAO_0000115>
-  </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
     <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-    <obo:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>	
-    <obo:IAO_0000115 xml:lang="en">Add as annotation triples in the granting ontology</obo:IAO_0000115>
-    <obo:IAO_0000111 xml:lang="en">term replaced by</obo:IAO_0000111>		
-    <rdfs:label xml:lang="en">term replaced by</rdfs:label>		
+    <obo:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>
+    <obo:IAO_0000111 xml:lang="en">term replaced by</obo:IAO_0000111>
+    <rdfs:label xml:lang="en">term replaced by</rdfs:label>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
   </owl:AnnotationProperty>
@@ -320,34 +306,6 @@ Annotations: expand_assertion_to "DisjointClasses: (http://purl.obolibrary.org/o
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <rdfs:label xml:lang="en">imported from</rdfs:label>
   </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
-    <obo:IAO_0000119 xml:lang="en">Person:Barry Smith</obo:IAO_0000119>
-    <rdfs:label xml:lang="en">elucidation</rdfs:label>
-    <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000111 xml:lang="en">elucidation</obo:IAO_0000111>
-    <obo:IAO_0000600 xml:lang="en">Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms</obo:IAO_0000600>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
-    <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-    <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
-    <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
-    <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
-    <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-    <rdfs:label xml:lang="en">has axiom label</rdfs:label>
-    <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000111 xml:lang="en">has axiom id</obo:IAO_0000111>
-    <obo:IAO_0000600 xml:lang="en">A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI</obo:IAO_0000600>
-  </owl:AnnotationProperty>
-   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
-    <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-    <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
-    <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000111 xml:lang="en">has associated axiom(fol)</obo:IAO_0000111>
-    <obo:IAO_0000600 xml:lang="en">An axiom expressed in first order logic using CLIF syntax</obo:IAO_0000600>
-  </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
     <rdfs:label xml:lang="en">definition</rdfs:label>
@@ -355,26 +313,6 @@ Annotations: expand_assertion_to "DisjointClasses: (http://purl.obolibrary.org/o
     <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
-    <obo:IAO_0000116 xml:lang="en">2012-04-05: 
-Barry Smith
-
-The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
-
-Can you fix to something like:
-
-A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
-
-Alan Ruttenberg
-
-Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
-
-On the specifics of the proposed definition:
-
-We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
-
-Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
-
-We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
     <rdfs:label xml:lang="en">alternative term</rdfs:label>
@@ -439,7 +377,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <rdfs:label xml:lang="en">expand expression to</rdfs:label>
     <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO_0002104
 Label: has plasma membrane part
-Annotations: IAO_0000424 "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)"
+Annotations: IAO_0000424 "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)"
 </obo:IAO_0000112>
     <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -521,4 +459,3 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 </rdf:RDF>
 
 <!-- Created with Protege (with OWL Plugin 3.4, Build 529)  http://protege.stanford.edu -->
-
