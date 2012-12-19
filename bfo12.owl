@@ -778,7 +778,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000002">
         <rdfs:label xml:lang="en">continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">An entity  that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">a heart</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a person</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a symphony orchestra</obo:IAO_0000112>
@@ -797,7 +797,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000003">
         <rdfs:label xml:lang="en">occurrent</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">An entity  that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">a surgical operation as processual context for a nosocomical infection</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">occurrent</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">perdurant</obo:IAO_0000118>
@@ -814,7 +814,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000004">
         <rdfs:label xml:lang="en">independent continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000002"/>
-        <obo:IAO_0000115 xml:lang="en">A continuant  that is a bearer of quality  and realizable entity  entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a heart</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a leg</obo:IAO_0000112>
@@ -834,7 +834,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000005">
         <rdfs:label xml:lang="en">dependent continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000002"/>
-        <obo:IAO_0000115 xml:lang="en">A continuant  that is either dependent on one or other independent continuant  bearers or inheres in or is borne by other entities.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A continuant that is either dependent on one or other independent continuant bearers or inheres in or is borne by other entities.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">dependent continuant</obo:IAO_0000111>
     </owl:Class>
     
@@ -845,8 +845,14 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000006">
         <rdfs:label xml:lang="en">spatial region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000002"/>
-        <obo:IAO_0000118>spatial_region</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A continuant that is neither bearer of quality entities nor inheres in any other entities.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">All instances of continuant are spatial entities, that is, they enter in the relation of (spatial) location with spatial region entities. As a particular case, the exact spatial location of a spatial region is this region itself.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">An instance of spatial region is a part of space. All parts of space are spatial region entities and only spatial region entities are parts of space. Space is the entire extent of the spatial universe, a designated individual, which is thus itself a spatial region.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Comment: Space and spatial region entities are entities in their own rights which exist independently of any entities which can be located at them. This view of space is sometimes called &quot;absolutist&quot; or &quot;the container view&quot;. In BFO, the class site allows for a so-called relational view of space, that is to say, a view according to which spatiality is a matter of relative location between entities and not a matter of being tied to space. The bridge between these two views is secured through the fact that while instances of site are not spatial region entities, they are nevertheless spatial entities.</obo:IAO_0000116>
+        <obo:IAO_0000112 xml:lang="en">parts of the sum total of all space in the universe</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">spatial region</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">spatial_region</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">the sum total of all space in the universe</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -856,7 +862,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000007">
         <rdfs:label xml:lang="en">processual entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000003"/>
-        <obo:IAO_0000115 xml:lang="en">A processual entity  that is a maximally connected spatiotemporal whole and has bona fide beginnings and endings corresponding to real discontinuities.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that is a maximally connected spatiotemporal whole and has bona fide beginnings and endings corresponding to real discontinuities.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">process</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the process of cell-division</obo:IAO_0000112>
@@ -870,10 +876,10 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000008">
         <rdfs:label xml:lang="en">temporal region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000003"/>
-        <obo:IAO_0000116 xml:lang="en">All instances of occurrent [span:Occurrent] are temporal entities, that is, they enter in the relation of (temporal) location with temporal region [span:TemporalRegion] entities. As a particular case, the exact spatiotemporal location of a temporal region [span:TemporalRegion] is this region itself. Continuant [snap:Continuant] entities are not temporal entities in the technical sense just explained; they are related to time in a different way, not through temporal location but through a relation of existence at a time or during a period of time (see continuant [snap:Continuant].</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">All instances of occurrent are temporal entities, that is, they enter in the relation of (temporal) location with temporal region entities. As a particular case, the exact spatiotemporal location of a temporal region is this region itself. Continuant entities are not temporal entities in the technical sense just explained; they are related to time in a different way, not through temporal location but through a relation of existence at a time or during a period of time (see continuant).</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">An instance of temporal region [span:TemporalRegion] is a part of time. All parts of time are temporal region [span:TemporalRegion] entities and only temporal region [span:TemporalRegion] entities are parts of time. Time is the entire extent of the temporal universe, a designated individual, which is thus a temporal region itself.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">An occurrent  that is part of time.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Time and temporal region [span:TemporalRegion] entities are entities in their own rights which exist independently of any entities which can be located at them. This view of time can be called &quot;absolutist&quot; or &quot;the container view&quot; in analogy to what is traditionally the case with space (see spatial region [snap:SpatialRegion].</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An occurrent that is part of time.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Time and temporal region entities are entities in their own rights which exist independently of any entities which can be located at them. This view of time can be called &quot;absolutist&quot; or &quot;the container view&quot; in analogy to what is traditionally the case with space (see spatial region).</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">temporal region</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the duration of a surgical procedure</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the moment of death</obo:IAO_0000112>
@@ -887,8 +893,12 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000009">
         <rdfs:label xml:lang="en">two dimensional region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000006"/>
-        <obo:IAO_0000118>two_dimensional_region</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">A spatial region with two dimensions.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the surface of a cube-shaped part of space</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the surface of a rectilinear planar figure-shaped part of space</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the surface of a sphere-shaped part of space</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">two dimensional region</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">two_dimensional_region</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -898,7 +908,13 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000011">
         <rdfs:label xml:lang="en">spatiotemporal region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000003"/>
+        <obo:IAO_0000116 xml:lang="en">All instances of occurrent are spatiotemporal entities, that is, they enter in the relation of (spatiotemporal) location with spatiotemporal region entities. As a particular case, the exact spatiotemporal location of a spatiotemporal region is this region itself.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An occurrent at or in which processual entity entities can be located.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Spacetime and spatiotemporal region entities are entities in their own rights which exist independently of any entities which can be located at them. This view of spacetime can be called &quot;absolutist&quot; or &quot;the container view&quot;. In BFO, the class processual context allows for a so-called relational view of spacetime, that is to say, a view according to which spatiotemporality is a matter of relative location between entities and not a matter of being tied to spacetime. In BFO, the bridge between these two views is secured through the fact that instances of processual context are too spatiotemporal entities.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">spatiotemporal region</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal context occupied by a process of cellular meiosis</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a human life</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by the development of a cancer tumor</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -908,7 +924,11 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000015">
         <rdfs:label xml:lang="en">process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that is a maximally connected spatiotemporal whole and has bona fide beginnings and endings corresponding to real discontinuities.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">process</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the process of cell-division</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the process of sleeping</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -918,7 +938,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000016">
         <rdfs:label xml:lang="en">disposition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
-        <obo:IAO_0000115 xml:lang="en">A realizable entity  that essentially causes a specific process or transformation in the object  in which it inheres, under specific circumstances and in conjunction with the laws of nature. A general formula for dispositions is: X (object  has the disposition D to (transform, initiate a process) R under conditions C.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A realizable entity that essentially causes a specific process or transformation in the object in which it inheres, under specific circumstances and in conjunction with the laws of nature. A general formula for dispositions is: X (object) has the disposition D to (transform, initiate a process) R under conditions C.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">disposition</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the disposition of a patient with a weakened immune system to contract disease</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the disposition of a vase to brake if dropped</obo:IAO_0000112>
@@ -934,8 +954,8 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000017">
         <rdfs:label xml:lang="en">realizable entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">If a realizable entity [snap:RealizableEntity] inheres in a continuant [snap:Continuant], this does not imply that it is actually realized.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant that inheres in continuant entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">If a realizable entity inheres in a continuant, this does not imply that it is actually realized.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">realizable entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the disposition of blood to coagulate</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the disposition of metal to conduct electricity</obo:IAO_0000112>
@@ -950,8 +970,10 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000018">
         <rdfs:label xml:lang="en">zero dimensional region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial region with no dimensions.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">a point</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">zero dimensional region</obo:IAO_0000111>
-        <obo:IAO_0000118>zero_dimensional_region</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">zero_dimensional_region</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -961,7 +983,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000019">
         <rdfs:label xml:lang="en">quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant  that is exhibited if it inheres in an entity or entities at all (a categorical property).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A specifically dependent continuant that is exhibited if it inheres in an entity or entities at all (a categorical property).</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">quality</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the ambient temperature of air</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the circumference of a waist</obo:IAO_0000112>
@@ -978,7 +1000,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000020">
         <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000005"/>
-        <obo:IAO_0000115 xml:lang="en">A continuant  that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">mode</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">property</obo:IAO_0000118>
         <obo:IAO_0000111 xml:lang="en">specifically dependent continuant</obo:IAO_0000111>
@@ -999,7 +1021,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000021">
         <rdfs:label xml:lang="en">temporal instant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000022"/>
-        <obo:IAO_0000115 xml:lang="en">A connected temporal region  comprising a single moment of time.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A connected temporal region comprising a single moment of time.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">right now</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">temporal instant</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the moment at which a child is born</obo:IAO_0000112>
@@ -1014,7 +1036,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000022">
         <rdfs:label xml:lang="en">connected temporal region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000008"/>
-        <obo:IAO_0000115 xml:lang="en">A temporal region  every point of which is mediately or immediately connected with every other point of which.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A temporal region every point of which is mediately or immediately connected with every other point of which.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">connected temporal region</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the 1970s years</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the time from the beginning to the end of a heart attack</obo:IAO_0000112>
@@ -1028,7 +1050,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000023">
         <rdfs:label xml:lang="en">role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
-        <obo:IAO_0000115 xml:lang="en">A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A realizable entity the manifestation of which brings about some result or end that is not essential to a continuant in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant in some kinds of natural, social or institutional contexts.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the role of a biological grandfather as legal guardian in the context of a system of laws</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the role of a chemical compound in an experiment</obo:IAO_0000112>
@@ -1046,7 +1068,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000025">
         <rdfs:label xml:lang="en">object boundary</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">An independent continuant  that is a lower dimensional part of a spatial entity, normally a closed two-dimensional surface. Boundaries are those privileged parts of object  entities that exist at exactly the point where the object  is separated off from the rest of the existing entities in the world.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An independent continuant that is a lower dimensional part of a spatial entity, normally a closed two-dimensional surface. Boundaries are those privileged parts of object entities that exist at exactly the point where the object is separated off from the rest of the existing entities in the world.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Boundaries are theoretically difficult entities to account for, however the intuitive notion of a physical boundary as a surface of some sort (whether inside or outside of a thing) will generally serve as a good guide for the use of this universal.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">object boundary</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">substance boundary</obo:IAO_0000118>
@@ -1063,8 +1085,11 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000026">
         <rdfs:label xml:lang="en">one dimensional region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000006"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial region with one dimension.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">an edge of a cube-shaped part of space</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">one dimensional region</obo:IAO_0000111>
-        <obo:IAO_0000118>one_dimensional_region</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">one_dimensional_region</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">the part of space that is a line stretching from one end of absolute space to the other</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1074,7 +1099,14 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000027">
         <rdfs:label xml:lang="en">object aggregate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is a mereological sum of separate object entities and possesses non-connected boundaries.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">a collection of random bacteria</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a flock of geese</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a group of commuters on the subway</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a heap of stones</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">object aggregate</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">substance aggregate</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">the patients in a hospital</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1084,8 +1116,11 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000028">
         <rdfs:label xml:lang="en">three dimensional region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000006"/>
-        <obo:IAO_0000118>three_dimensional_region</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A spatial region with three dimensions.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">a cube-shaped part of space</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sphere-shaped part of space</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">three dimensional region</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">three_dimensional_region</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1095,8 +1130,8 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000029">
         <rdfs:label xml:lang="en">site</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">An independent continuant  consisting of a characteristic spatial shape in relation to some arrangement of other continuant  entities and of the medium which is enclosed in whole or in part by this characteristic spatial shape. Site  entities are entities that can be occupied by other continuant  entities.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">An instance of Site [snap:Site] is a mixture of independent continuant [snap:IndependentContinuant] entities which act as surrounding environments for other independent continuant [snap:IndependentContinuant] entities, most importantly for instances of object [snap:Object]. A site [snap:Site] is typically made of object [snap:Object] or fiat object part [snap:FiatObjectPart] entities and a surrounding medium in which is found an object [snap:Object] occupying the site [snap:Site]. Independent continuant [snap:IndependentContinuant] entities may be associated with others (which, then, are sites) through a relation of &quot;occupation&quot;. That relation is connected to, but distinct from, the relation of spatial location. Site [snap:Site] entities are not to be confused with spatial region [snap:SpatialRegion] entities. In BFO, site [snap:Site] allows for a so-called relational view of space which is different from the view corresponding to the class spatial region [snap:SpatialRegion] (see the comment on this class).</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An independent continuant consisting of a characteristic spatial shape in relation to some arrangement of other continuant entities and of the medium which is enclosed in whole or in part by this characteristic spatial shape. Site entities are entities that can be occupied by other continuant entities.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">An instance of Site is a mixture of independent continuant entities which act as surrounding environments for other independent continuant entities, most importantly for instances of object. A site is typically made of object or fiat object part entities and a surrounding medium in which is found an object occupying the site. Independent continuant entities may be associated with others (which, then, are sites) through a relation of &quot;occupation&quot;. That relation is connected to, but distinct from, the relation of spatial location. Site entities are not to be confused with spatial region entities. In BFO, site allows for a so-called relational view of space which is different from the view corresponding to the class spatial region (see the comment on this class).</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">Maria&apos;s nostril or her intestines for a variety of bacteria</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a particular room in a particular hospital</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">site</obo:IAO_0000111>
@@ -1109,7 +1144,14 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000030">
         <rdfs:label xml:lang="en">object</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is spatially extended, maximally self-connected and self-contained (the parts of a substance are not separated from each other by spatial gaps) and possesses an internal unity. The identity of substantial object entities is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a heart</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a lung</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an apple</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an organism</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">object</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">substance</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1119,7 +1161,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000031">
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000005"/>
-        <obo:IAO_0000115 xml:lang="en">A continuant  that is dependent on one or other independent continuant  bearers. For every instance of A requires some instance of (an independent continuant  type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">a certain PDF file that exists in different and in several hard drives</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">generically dependent continuant</obo:IAO_0000111>
     </owl:Class>
@@ -1131,7 +1173,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000032">
         <rdfs:label xml:lang="en">scattered temporal region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000008"/>
-        <obo:IAO_0000115 xml:lang="en">A temporal region  every point of which is not mediately or immediately connected with every other point of which.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A temporal region every point of which is not mediately or immediately connected with every other point of which.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">scattered temporal region</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the time occupied by the individual games of the World Cup</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the time occupied by the individual liaisons in a romantic affair</obo:IAO_0000112>
@@ -1144,7 +1186,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000034">
         <rdfs:label xml:lang="en">function</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
-        <obo:IAO_0000115 xml:lang="en">A realizable entity  the manifestation of which is an essentially end-directed activity of a continuant  entity in virtue of that continuant  entity being a specific kind of entity in the kind or kinds of contexts that it is made for.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A realizable entity the manifestation of which is an essentially end-directed activity of a continuant entity in virtue of that continuant entity being a specific kind of entity in the kind or kinds of contexts that it is made for.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">function</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the digestive function of the stomach to nutriate the body</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the function of a birth canal to enable transport</obo:IAO_0000112>
@@ -1163,7 +1205,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000035">
         <rdfs:label xml:lang="en">process boundary</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
-        <obo:IAO_0000115 xml:lang="en">A processual entity  that is the fiat or bona fide instantaneous temporal process boundary.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that is the fiat or bona fide instantaneous temporal process boundary.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">birth</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">death</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">process boundary</obo:IAO_0000111>
@@ -1181,7 +1223,7 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000038">
         <rdfs:label xml:lang="en">temporal interval</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000022"/>
-        <obo:IAO_0000115 xml:lang="en">A connected temporal region  lasting for more than a single moment of time.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A connected temporal region lasting for more than a single moment of time.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">any continuous temporal duration during which a process occurs</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">temporal interval</obo:IAO_0000111>
     </owl:Class>
@@ -1193,9 +1235,11 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0000040">
         <rdfs:label xml:lang="en">material entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">An independent continuant  that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Examples: collection of random bacteria, a chair, dorsal surface of the body</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Material entity subsumes object, fiat object part, and object aggregate, which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</obo:IAO_0000116>
+        <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">collection of random bacteria</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">dorsal surface of the body</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">material entity</obo:IAO_0000111>
     </owl:Class>
     
@@ -1206,7 +1250,13 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0001000">
         <rdfs:label xml:lang="en">fiat object part</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is part of an object but is not demarcated by any physical discontinuities.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">fiat object part</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">fiat substance part</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">the dorsal and ventral surfaces of the body</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the east side of Saarbruecken</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the lower right portion of a human torso</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">upper and lower lobes of the left lung</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1216,7 +1266,12 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0001001">
         <rdfs:label xml:lang="en">fiat process part</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that is part of a process but that does not have bona fide beginnings and endings corresponding to real discontinuities.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">chewing during a meal</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">fiat process part</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the middle part of a rainstorm</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the most interesting part of Van Gogh&apos;s life</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the worst part of a heart-attack</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1226,7 +1281,11 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0001002">
         <rdfs:label xml:lang="en">process aggregate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that is a mereological sum of process entities and possesses non-connected boundaries.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">a process of digestion and a process of thinking taken together</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">process aggregate</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the beating of the hearts of each of seven individuals in the room</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the playing of each of the members of an orchestra</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1236,6 +1295,9 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0001003">
         <rdfs:label xml:lang="en">processual context</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <obo:IAO_0000116 xml:lang="en">An instance of a processual context is a mixture of processual entity which stand as surrounding environments for other processual entity entities. The class processual context is the analogous among occurrent entities to the class site among continuant entities.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">An occurrent consisting of a characteristic spatial shape inhering in some arrangement of other occurrent entities. Processual context entities are characteristically entities at or in which other occurrent entities can be located or occur.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">The processual context for a given manipulation occurring as part of an experiment is made of processual entities which occur in parallel, are not necessarily all parts of the experiment themselves and may involve continuant [snap:Continuant] entities which are in the spatial vicinity of the participants in the experiment.</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">processual context</obo:IAO_0000111>
     </owl:Class>
     
@@ -1246,7 +1308,10 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0001004">
         <rdfs:label xml:lang="en">connected spatiotemporal region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A spatiotemporal region that has temporal and spatial dimensions such that all points within the spatiotemporal region are mediately or immediately connected to all other points within the same spatiotemporal region.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">connected spatiotemporal region</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the spatial and temporal location of an individual organism&apos;s life</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the spatial and temporal location of the development of a fetus</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1256,7 +1321,9 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0001005">
         <rdfs:label xml:lang="en">spatiotemporal instant</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">A connected spatiotemporal region at a specific moment.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">spatiotemporal instant</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a single instantaneous temporal slice (part) of a process</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1266,7 +1333,9 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0001006">
         <rdfs:label xml:lang="en">spatiotemporal interval</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0001004"/>
+        <obo:IAO_0000115 xml:lang="en">A connected spatiotemporal region that endures for more than a single moment of time.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">spatiotemporal interval</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a process or by a fiat processual part</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1276,7 +1345,10 @@ level: instances</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;BFO_0001007">
         <rdfs:label xml:lang="en">scattered spatiotemporal region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A spatiotemporal region that has spatial and temporal dimensions and every spatial and temporal point of which is not connected with every other spatial and temporal point of which.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">scattered spatiotemporal region</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the space and time occupied by the individual games of the World Cup</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the space and time occupied by the individual liaisons in a romantic affair</obo:IAO_0000112>
     </owl:Class>
 </rdf:RDF>
 
