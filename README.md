@@ -35,5 +35,5 @@ An experimental version of the [Information Artifact Ontology (IAO)](http://info
 
 ## obi
 
-An experimental version of the [Ontology for Biomedical Investigations (OBI)](http://obi-ontology.org/), based on the development version, replacing the ruttenberg-bfo2 import with bfo-1.2. Note that this uses a "magic" catalog-v001.xml file to modify import paths.
+An experimental version of the [Ontology for Biomedical Investigations (OBI)](http://obi-ontology.org/), based on the development version, replacing the ruttenberg-bfo2 import with bfo-1.2. We have also changed the ID for "located in" from BFO_0000082 (located in at all times) to a new ID (BFO_0001025) -- there might be a better way to do this. Note that this uses a "magic" catalog-v001.xml file to modify import paths.
 
