@@ -29,3 +29,11 @@ The BFO 1.2 proposal was designed to make this work well. However there are a fe
 
 These mappings are noted in the [mapping spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0AnbOUYWIQYUEdF9yb0hlUjhBUGRnVWNTVFJQX0xOUlE).
 
+## iao
+
+An experimental version of the [Information Artifact Ontology (IAO)](http://information-artifact-ontology.googlecode.com/), based on the iao-bfo2 development branch, replacing the ruttenberg-bfo2 import with bfo-1.2. Note that this uses a "magic" catalog-v001.xml file to modify import paths.
+
+## obi
+
+An experimental version of the [Ontology for Biomedical Investigations (OBI)](http://obi-ontology.org/), based on the development version, replacing the ruttenberg-bfo2 import with bfo-1.2. Note that this uses a "magic" catalog-v001.xml file to modify import paths.
+
