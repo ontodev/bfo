@@ -923,6 +923,19 @@ time: atemporal</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000010 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000010">
+        <rdfs:label xml:lang="en">scattered spatiotemporal region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A spatiotemporal region that has spatial and temporal dimensions and every spatial and temporal point of which is not connected with every other spatial and temporal point of which.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">scattered spatiotemporal region</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the space and time occupied by the individual games of the World Cup</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the space and time occupied by the individual liaisons in a romantic affair</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000011 -->
 
     <owl:Class rdf:about="&obo;BFO_0000011">
@@ -935,6 +948,45 @@ time: atemporal</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">the spatiotemporal context occupied by a process of cellular meiosis</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a human life</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by the development of a cancer tumor</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000012 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000012">
+        <rdfs:label xml:lang="en">spatiotemporal instant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000013"/>
+        <obo:IAO_0000115 xml:lang="en">A connected spatiotemporal region at a specific moment.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">spatiotemporal instant</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a single instantaneous temporal slice (part) of a process</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000013 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000013">
+        <rdfs:label xml:lang="en">connected spatiotemporal region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A spatiotemporal region that has temporal and spatial dimensions such that all points within the spatiotemporal region are mediately or immediately connected to all other points within the same spatiotemporal region.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">connected spatiotemporal region</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the spatial and temporal location of an individual organism&apos;s life</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the spatial and temporal location of the development of a fetus</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000014 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000014">
+        <rdfs:label xml:lang="en">process aggregate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that is a mereological sum of process entities and possesses non-connected boundaries.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">a process of digestion and a process of thinking taken together</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">process aggregate</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the beating of the hearts of each of seven individuals in the room</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the playing of each of the members of an orchestra</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -1083,6 +1135,22 @@ time: atemporal</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000024">
+        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is part of an object but is not demarcated by any physical discontinuities.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">fiat object part</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">fiat substance part</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">the dorsal and ventral surfaces of the body</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the east side of Saarbruecken</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the lower right portion of a human torso</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">upper and lower lobes of the left lung</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000025 -->
 
     <owl:Class rdf:about="&obo;BFO_0000025">
@@ -1201,6 +1269,21 @@ time: atemporal</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000033 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000033">
+        <rdfs:label xml:lang="en">fiat process part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that is part of a process but that does not have bona fide beginnings and endings corresponding to real discontinuities.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">chewing during a meal</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">fiat process part</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the middle part of a rainstorm</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the most interesting part of Van Gogh&apos;s life</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the worst part of a heart-attack</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
 
     <owl:Class rdf:about="&obo;BFO_0000034">
@@ -1238,6 +1321,18 @@ time: atemporal</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000036 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000036">
+        <rdfs:label xml:lang="en">spatiotemporal interval</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000013"/>
+        <obo:IAO_0000115 xml:lang="en">A connected spatiotemporal region that endures for more than a single moment of time.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">spatiotemporal interval</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a process or by a fiat processual part</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000038 -->
 
     <owl:Class rdf:about="&obo;BFO_0000038">
@@ -1265,51 +1360,6 @@ time: atemporal</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0001000 -->
-
-    <owl:Class rdf:about="&obo;BFO_0001000">
-        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity that is part of an object but is not demarcated by any physical discontinuities.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">fiat object part</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">fiat substance part</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">the dorsal and ventral surfaces of the body</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the east side of Saarbruecken</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the lower right portion of a human torso</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">upper and lower lobes of the left lung</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0001001 -->
-
-    <owl:Class rdf:about="&obo;BFO_0001001">
-        <rdfs:label xml:lang="en">fiat process part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
-        <obo:IAO_0000115 xml:lang="en">A processual entity that is part of a process but that does not have bona fide beginnings and endings corresponding to real discontinuities.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">chewing during a meal</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">fiat process part</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">the middle part of a rainstorm</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the most interesting part of Van Gogh&apos;s life</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the worst part of a heart-attack</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0001002 -->
-
-    <owl:Class rdf:about="&obo;BFO_0001002">
-        <rdfs:label xml:lang="en">process aggregate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
-        <obo:IAO_0000115 xml:lang="en">A processual entity that is a mereological sum of process entities and possesses non-connected boundaries.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">a process of digestion and a process of thinking taken together</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">process aggregate</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">the beating of the hearts of each of seven individuals in the room</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the playing of each of the members of an orchestra</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0001003 -->
 
     <owl:Class rdf:about="&obo;BFO_0001003">
@@ -1319,56 +1369,6 @@ time: atemporal</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">An occurrent consisting of a characteristic spatial shape inhering in some arrangement of other occurrent entities. Processual context entities are characteristically entities at or in which other occurrent entities can be located or occur.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">The processual context for a given manipulation occurring as part of an experiment is made of processual entities which occur in parallel, are not necessarily all parts of the experiment themselves and may involve continuant [snap:Continuant] entities which are in the spatial vicinity of the participants in the experiment.</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">processual context</obo:IAO_0000111>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0001004 -->
-
-    <owl:Class rdf:about="&obo;BFO_0001004">
-        <rdfs:label xml:lang="en">connected spatiotemporal region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A spatiotemporal region that has temporal and spatial dimensions such that all points within the spatiotemporal region are mediately or immediately connected to all other points within the same spatiotemporal region.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">connected spatiotemporal region</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">the spatial and temporal location of an individual organism&apos;s life</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the spatial and temporal location of the development of a fetus</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0001005 -->
-
-    <owl:Class rdf:about="&obo;BFO_0001005">
-        <rdfs:label xml:lang="en">spatiotemporal instant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0001004"/>
-        <obo:IAO_0000115 xml:lang="en">A connected spatiotemporal region at a specific moment.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">spatiotemporal instant</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a single instantaneous temporal slice (part) of a process</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0001006 -->
-
-    <owl:Class rdf:about="&obo;BFO_0001006">
-        <rdfs:label xml:lang="en">spatiotemporal interval</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0001004"/>
-        <obo:IAO_0000115 xml:lang="en">A connected spatiotemporal region that endures for more than a single moment of time.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">spatiotemporal interval</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a process or by a fiat processual part</obo:IAO_0000112>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0001007 -->
-
-    <owl:Class rdf:about="&obo;BFO_0001007">
-        <rdfs:label xml:lang="en">scattered spatiotemporal region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A spatiotemporal region that has spatial and temporal dimensions and every spatial and temporal point of which is not connected with every other spatial and temporal point of which.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">scattered spatiotemporal region</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">the space and time occupied by the individual games of the World Cup</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the space and time occupied by the individual liaisons in a romantic affair</obo:IAO_0000112>
     </owl:Class>
 </rdf:RDF>
 
