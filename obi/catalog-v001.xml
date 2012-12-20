@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://purl.obolibrary.org/obo/bfo-1.2.owl" uri="../bfo-1.2.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/external.owl" uri="external.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/externalDerived.owl" uri="externalDerived.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/external-byhand.owl" uri="external-byhand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi.owl" uri="obi.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="../iao/IAO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="../iao/obsolete.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="../iao/iao-main.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="../iao/externalDerived.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="../iao/external.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="../iao/externalByHand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="../ontology-metadata.owl"/>
+</catalog>
