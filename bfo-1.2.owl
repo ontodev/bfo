@@ -444,24 +444,6 @@ time: at some time</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000171 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000171">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">located in</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">Intended meaning:
-domain: continuant
-range: spatial region
-time: at some time</obo:IAO_0000116>
-        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
-        <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
-        <owl:inverseOf rdf:resource="&obo;BFO_0001015"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0001008 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0001008">
@@ -769,6 +751,24 @@ time: atemporal</obo:IAO_0000116>
         <obo:IAO_0000116 rdf:datatype="&xsd;boolean">false</obo:IAO_0000116>
         <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
         <obo:IAO_0000111 xml:lang="en">relationship</obo:IAO_0000111>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0001025">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: continuant
+range: spatial region
+time: at some time</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
+        <owl:inverseOf rdf:resource="&obo;BFO_0001015"/>
     </owl:ObjectProperty>
     
 
