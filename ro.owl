@@ -20,7 +20,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ro.owl">
-        <owl:imports rdf:resource="https://raw.github.com/ontodev/bfo/master/bfo12.owl"/>
+        <owl:imports rdf:resource="https://raw.github.com/ontodev/bfo/master/bfo-1.2.owl"/>
         <owl:imports rdf:resource="https://raw.github.com/ontodev/bfo/master/ontology-metadata.owl"/>
         <owl:versionIRI rdf:resource="&obo;ro/2012-07-11/ro.owl"/>
     </owl:Ontology>
