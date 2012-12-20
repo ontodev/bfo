@@ -82,7 +82,9 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000050">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood.
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:part_of</dc:source>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+Ambiguous between continuant-parthood and occurrent-parthood.
 
 domain: continuant
 range: continuant
@@ -91,7 +93,7 @@ time: at some time
 domain: occurrent
 range: occurrent
 time: atemporal</obo:IAO_0000116>
-        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:part_of</dc:source>
+        <obo:IAO_0000116 xml:lang="en">Parthood as a relation between instances: The primitive instance-level relation p part_of p1 is illustrated in assertions such as: this instance of rhodopsin mediated phototransduction part_of this instance of visual perception.    This relation satisfies at least the following standard axioms of mereology: reflexivity (for all p, p part_of p); anti-symmetry (for all p, p1, if p part_of p1 and p1 part_of p then p and p1 are identical); and transitivity (for all p, p1, p2, if p part_of p1 and p1 part_of p2, then p part_of p2). Analogous axioms hold also for parthood as a relation between spatial regions.    For parthood as a relation between continuants, these axioms need to be modified to take account of the incorporation of a temporal argument. Thus for example the axiom of transitivity for continuants will assert that if c part_of c1 at t and c1 part_of c2 at t, then also c part_of c2 at t.    Parthood as a relation between classes: To define part_of as a relation between classes we again need to distinguish the two cases of continuants and processes, even though the explicit reference to instants of time now falls away. For continuants, we have C part_of C1 if and only if any instance of C at any time is an instance-level part of some instance of C1 at that time, as for example in: cell nucleus part_ of cell.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">part of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
         <owl:inverseOf rdf:resource="&obo;BFO_0000051"/>
@@ -104,7 +106,8 @@ time: atemporal</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0000051">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood.
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+Ambiguous between continuant-parthood and occurrent-parthood.
 
 domain: continuant
 range: continuant
@@ -123,11 +126,15 @@ time: atemporal</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000052">
         <rdfs:label xml:lang="en">inheres in</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: dependent continuant
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: specifically dependent continuant
 range: independent continuant
-time: at all times</obo:IAO_0000116>
+time: at all times
+
+A specifically dependent continuant A inheres in its independent continuant B at all times during which A exists.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000020"/>
     </owl:ObjectProperty>
     
 
@@ -136,12 +143,14 @@ time: at all times</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000053">
         <rdfs:label xml:lang="en">bearer of</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: independent continuant
+range: specifically dependent continuant
+time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant
-range: dependent continuant
-time: at some time</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000020"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0000052"/>
     </owl:ObjectProperty>
     
@@ -151,12 +160,15 @@ time: at some time</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000054">
         <rdfs:label xml:lang="en">realized in</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: realizable entity
-range: process
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: realizable entity
+range: processual entity
 time: atemporal</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
         <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000007"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000017"/>
     </owl:ObjectProperty>
     
 
@@ -165,10 +177,13 @@ time: atemporal</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
         <rdfs:label xml:lang="en">realizes</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: process
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: processual entity
 range: realizable entity
 time: atemporal</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">realizes</obo:IAO_0000111>
+        <rdfs:domain rdf:resource="&obo;BFO_0000007"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000017"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0000054"/>
     </owl:ObjectProperty>
     
@@ -178,11 +193,14 @@ time: atemporal</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000056">
         <rdfs:label xml:lang="en">participates in</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant and (not spatial region)
-range: process
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: continuant and (not spatial region)
+range: processual entity
 time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">participates in</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000002"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
     </owl:ObjectProperty>
     
 
@@ -192,11 +210,15 @@ time: at some time</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0000057">
         <rdfs:label xml:lang="en">has participant</rdfs:label>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
-        <obo:IAO_0000116 xml:lang="en">domain: process
+        <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: processual entity
 range: continuant and (not spatial region)
 time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000002"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0000056"/>
     </owl:ObjectProperty>
     
@@ -206,12 +228,15 @@ time: at some time</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000058">
         <rdfs:label xml:lang="en">concretized by</rdfs:label>
-        <obo:IAO_0000111 xml:lang="en">concretized by</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">concretized_by</obo:IAO_0000118>
-        <obo:IAO_0000116 xml:lang="en">domain: generically dependent continuant
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: generically dependent continuant
 range: specifically dependent continuant
 time: at some time</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">concretized by</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">concretized_by</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is concretized by</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000020"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000031"/>
     </owl:ObjectProperty>
     
 
@@ -220,11 +245,14 @@ time: at some time</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000059">
         <rdfs:label xml:lang="en">concretizes</rdfs:label>
-        <obo:IAO_0000111 xml:lang="en">concretizes</obo:IAO_0000111>
-        <obo:IAO_0000116 xml:lang="en">domain: specifically dependent continuant
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: specifically dependent continuant
 range: generically dependent continuant
 time: at some time</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">concretizes</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">is concretization of</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000020"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000031"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0000058"/>
     </owl:ObjectProperty>
     
@@ -236,12 +264,16 @@ time: at some time</obo:IAO_0000116>
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</dc:source>
-        <obo:IAO_0000116 xml:lang="en">domain: process
-range: process
+        <obo:IAO_0000116 xml:lang="en">An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: occurrent
+range: occurrent
 time: atemporal</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">is preceded by</obo:IAO_0000118>
         <obo:IAO_0000111 xml:lang="en">preceded by</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">preceded_by</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0000063"/>
     </owl:ObjectProperty>
     
@@ -252,10 +284,13 @@ time: atemporal</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0000063">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">precedes</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: process
-range: process
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: occurrent
+range: occurrent
 time: atemporal</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">precedes</obo:IAO_0000111>
+        <rdfs:range rdf:resource="&obo;BFO_0000003"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
     </owl:ObjectProperty>
     
 
@@ -264,13 +299,16 @@ time: atemporal</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000066">
         <rdfs:label xml:lang="en">occurs in</rdfs:label>
-        <obo:IAO_0000118 xml:lang="en">domain: process
+        <obo:IAO_0000118 xml:lang="en">Intended meaning:
+domain: occurrent
 range: independent continuant
 time: atemporal</obo:IAO_0000118>
         <obo:IAO_0000111 xml:lang="en">occurs in</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">occurs_in</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">unfolds in</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">unfolds_in</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000003"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000004"/>
     </owl:ObjectProperty>
     
 
@@ -279,11 +317,13 @@ time: atemporal</obo:IAO_0000118>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000079">
         <rdfs:label xml:lang="en">function of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: function
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: function
 range: independent continuant
 time: at all times</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">function of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">function_of</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000034"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000052"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0000085"/>
     </owl:ObjectProperty>
@@ -294,11 +334,13 @@ time: at all times</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000080">
         <rdfs:label xml:lang="en">quality of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: quality
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: quality
 range: independent continuant
 time: at all times</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">quality of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">quality_of</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000019"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000052"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0000086"/>
     </owl:ObjectProperty>
@@ -309,11 +351,13 @@ time: at all times</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000081">
         <rdfs:label xml:lang="en">role of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: role
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: role
 range: independent continuant
 time: at all times</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">role of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">role_of</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000023"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000052"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0000087"/>
     </owl:ObjectProperty>
@@ -324,11 +368,13 @@ time: at all times</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000085">
         <rdfs:label xml:lang="en">has function</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: independent continuant
 range: function
 time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">has function</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">has_function</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000034"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000053"/>
     </owl:ObjectProperty>
     
@@ -338,11 +384,13 @@ time: at some time</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000086">
         <rdfs:label xml:lang="en">has quality</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: independent continuant
 range: quality
 time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">has quality</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">has_quality</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000019"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000053"/>
     </owl:ObjectProperty>
     
@@ -352,11 +400,13 @@ time: at some time</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000087">
         <rdfs:label xml:lang="en">has role</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: independent continuant
 range: role
 time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">has role</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">has_role</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000023"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000053"/>
     </owl:ObjectProperty>
     
@@ -366,11 +416,13 @@ time: at some time</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000107">
         <rdfs:label xml:lang="en">disposition of</rdfs:label>
-        <obo:IAO_0000111 xml:lang="en">disposition of</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">disposition_of</obo:IAO_0000118>
-        <obo:IAO_0000116 xml:lang="en">domain: disposition
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: disposition
 range: independent continuant
 time: at all times</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">disposition of</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">disposition_of</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000016"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000052"/>
     </owl:ObjectProperty>
     
@@ -380,11 +432,13 @@ time: at all times</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000112">
         <rdfs:label xml:lang="en">has disposition</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: independent continuant
 range: disposition
 time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">has disposition</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">has_disposition</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000016"/>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000053"/>
     </owl:ObjectProperty>
     
@@ -395,10 +449,12 @@ time: at some time</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0000171">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">located in</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: continuant
 range: spatial region
 time: at some time</obo:IAO_0000116>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
+        <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
         <owl:inverseOf rdf:resource="&obo;BFO_0001015"/>
@@ -410,17 +466,17 @@ time: at some time</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0001008">
         <rdfs:label xml:lang="en">adjacent to</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: independent continuant
+range: independent continuant
+time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">adjacent to</obo:IAO_0000111>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:adjacent_to</dc:source>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant or spatial region
-range: independent continuant or spatial region
-time: atemporal
-
-domain: independent continuant or spatial region
-range: independent continuant or spatial region
-time: at some time</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Note that adjacent_to as thus defined is not a symmetric relation, in contrast to its instance-level counterpart. For it can be the case that Cs are in general such as to be adjacent to instances of C1 while no analogous statement holds for C1s in general in relation to instances of C. Examples are: nuclear membrane adjacent_to cytoplasm; seminal vesicle adjacent_to urinary bladder; ovary adjacent_to parietal pelvic peritoneum</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">adjacent_to</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is adjacent to</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000004"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000004"/>
     </owl:ObjectProperty>
     
 
@@ -430,12 +486,16 @@ time: at some time</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001009">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">derives from</rdfs:label>
-        <obo:IAO_0000111 xml:lang="en">derives from</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">derives_from</obo:IAO_0000118>
+        <obo:IAO_0000116 xml:lang="en">Derivation as a relation between instances. The temporal relation of derivation is more complex. Transformation, on the instance level, is just the relation of identity: each adult is identical to some child existing at some earlier time. Derivation on the instance-level is a relation holding between non-identicals. More precisely, it holds between distinct material continuants when one succeeds the other across a temporal divide in such a way that at least a biologically significant portion of the matter of the earlier continuant is inherited by the later. Thus we will have axioms to the effect that from c derives_from c1 we can infer that c and c1 are not identical and that there is some instant of time t such that c1 exists only prior to and c only subsequent to t. We will also be able to infer that the spatial region occupied by c as it begins to exist at t overlaps with the spatial region occupied by c1 as it ceases to exist in the same instant.</obo:IAO_0000116>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:derives_from</dc:source>
-        <obo:IAO_0000116 xml:lang="en">domain: material entity
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: material entity
 range: material entity
 time: atemporal</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">derives from</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">derives_from</obo:IAO_0000118>
+        <rdfs:domain rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000040"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0001010"/>
     </owl:ObjectProperty>
     
@@ -446,11 +506,14 @@ time: atemporal</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001010">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">derived into</rdfs:label>
-        <obo:IAO_0000111 xml:lang="en">derived into</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">derived_into</obo:IAO_0000118>
-        <obo:IAO_0000116 xml:lang="en">domain: material entity
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: material entity
 range: material entity
 time: atemporal</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">derived into</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">derived_into</obo:IAO_0000118>
+        <rdfs:range rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:domain rdf:resource="&obo;BFO_0000040"/>
     </owl:ObjectProperty>
     
 
@@ -458,14 +521,13 @@ time: atemporal</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/BFO_0001011 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0001011">
-        <rdfs:label xml:lang="en">has active participant</rdfs:label>
-        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_agent</dc:source>
-        <obo:IAO_0000116 xml:lang="en">domain: process
+        <rdfs:label xml:lang="en">has agent</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: processual entity
 range: continuant and (not spatial region)
 time: at some time</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en">has active participant</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">has agent</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">has_active_participant</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">has agent</obo:IAO_0000111>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_agent</dc:source>
         <obo:IAO_0000118 xml:lang="en">has_agent</obo:IAO_0000118>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000057"/>
         <owl:inverseOf rdf:resource="&obo;BFO_0001012"/>
@@ -476,14 +538,13 @@ time: at some time</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/BFO_0001012 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0001012">
-        <rdfs:label xml:lang="en">actively participates in</rdfs:label>
-        <obo:IAO_0000111 xml:lang="en">actively participates in</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">actively_participates_in</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">agent in</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">agent_in</obo:IAO_0000118>
-        <obo:IAO_0000116 xml:lang="en">domain: continuant and (not spatial region)
-range: process
+        <rdfs:label xml:lang="en">agent in</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: continuant and (not spatial region)
+range: processual entity
 time: at some time</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">agent in</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">agent_in</obo:IAO_0000118>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000056"/>
     </owl:ObjectProperty>
     
@@ -495,7 +556,8 @@ time: at some time</obo:IAO_0000116>
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">integral part of</rdfs:label>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:integral_part_of</dc:source>
-        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood.
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+Ambiguous between continuant-parthood and occurrent-parthood.
 
 domain: continuant
 range: continuant
@@ -517,7 +579,8 @@ time: atemporal</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001014">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has integral part</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood.
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+Ambiguous between continuant-parthood and occurrent-parthood.
 
 domain: continuant
 range: continuant
@@ -538,7 +601,8 @@ time: atemporal</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001015">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">location of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">domain: spatial region
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: spatial region
 range: continuant
 time: at some time</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">location of</obo:IAO_0000111>
@@ -552,7 +616,8 @@ time: at some time</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001016">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">proper part of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood.
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+Ambiguous between continuant-parthood and occurrent-parthood.
 
 domain: continuant
 range: continuant
@@ -575,7 +640,8 @@ time: atemporal</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001017">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has proper part</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood.
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+Ambiguous between continuant-parthood and occurrent-parthood.
 
 domain: continuant
 range: continuant
@@ -594,16 +660,16 @@ time: atemporal</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/BFO_0001018 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0001018">
-        <rdfs:label xml:lang="en">surrounded by</rdfs:label>
-        <obo:IAO_0000118 xml:lang="en">contained in</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">contained in</rdfs:label>
+        <obo:IAO_0000116>Containment is location not involving parthood, and arises only where some immaterial continuant is involved.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Containment obtains in each case between material and immaterial continuants, for instance: lung contained_in thoracic cavity; bladder contained_in pelvic cavity. Hence containment is not a transitive relation.    If c part_of c1 at t then we have also, by our definition and by the axioms of mereology applied to spatial regions, c located_in c1 at t. Thus, many examples of instance-level location relations for continuants are in fact cases of instance-level parthood. For material continuants location and parthood coincide. Containment is location not involving parthood, and arises only where some immaterial continuant is involved. To understand this relation, we first define overlap for continuants as follows:    c1 overlap c2 at t =def for some c, c part_of c1 at t and c part_of c2 at t. The containment relation on the instance level can then be defined (see definition):</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: material entity
+range: spatial region or site (immaterial continuant)
+time: at some time</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">contained_in</obo:IAO_0000118>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant or spatial region
-range: independent continuant or spatial region
-time: atemporal</obo:IAO_0000116>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:contained_in</dc:source>
-        <obo:IAO_0000111 xml:lang="en">surrounded by</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">surrounded_by</obo:IAO_0000118>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0001008"/>
+        <obo:IAO_0000111 xml:lang="en">contained in</obo:IAO_0000111>
         <owl:inverseOf rdf:resource="&obo;BFO_0001019"/>
     </owl:ObjectProperty>
     
@@ -612,13 +678,12 @@ time: atemporal</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/BFO_0001019 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0001019">
-        <rdfs:label xml:lang="en">surounds</rdfs:label>
-        <obo:IAO_0000118 xml:lang="en">contains</obo:IAO_0000118>
-        <obo:IAO_0000116 xml:lang="en">domain: independent continuant or spatial region
-range: independent continuant or spatial region
-time: atemporal</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en">surrounds</obo:IAO_0000111>
-        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0001008"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+domain: spatial region or site (immaterial continuant)
+range: material entity
+time: at some time</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">contains</obo:IAO_0000111>
     </owl:ObjectProperty>
     
 
@@ -628,6 +693,7 @@ time: atemporal</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="&obo;BFO_0001020">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">transformation of</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">When an embryonic oenocyte (a type of insect cell) is transformed into a larval oenocyte, one and the same continuant entity preserves its identity while instantiating distinct classes at distinct times. The class-level relation transformation_of obtains between continuant classes C and C1 wherever each instance of the class C is such as to have existed at some earlier time as an instance of the distinct class C1 (see Figure 2 in paper). This relation is illustrated first of all at the molecular level of granularity by the relation between mature RNA and the pre-RNA from which it is processed, or between (UV-induced) thymine-dimer and thymine dinucleotide. At coarser levels of granularity it is illustrated by the transformations involved in the creation of red blood cells, for example, from reticulocyte to erythrocyte, and by processes of development, for example, from larva to pupa, or from (post-gastrular) embryo to fetus or from child to adult. It is also manifest in pathological transformations, for example, of normal colon into carcinomatous colon. In each such case, one and the same continuant entity instantiates distinct classes at different times in virtue of phenotypic changes.</obo:IAO_0000116>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:transformation_of</dc:source>
         <obo:IAO_0000111 xml:lang="en">transformation of</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">transformation_of</obo:IAO_0000118>
@@ -678,7 +744,8 @@ time: atemporal</obo:IAO_0000116>
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">improper part of</rdfs:label>
         <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
-        <obo:IAO_0000116 xml:lang="en">Ambiguous between continuant-parthood and occurrent-parthood.
+        <obo:IAO_0000116 xml:lang="en">Intended meaning:
+Ambiguous between continuant-parthood and occurrent-parthood.
 
 domain: continuant
 range: continuant
